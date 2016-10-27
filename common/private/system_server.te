@@ -5,3 +5,6 @@ set_prop(system_server, adbtcp_prop)
 
 # Use HALs
 hal_client_domain(system_server, hal_lineage_touch)
+
+#pocket mode
+allow system_server pocket_service:service_manager { add find };
